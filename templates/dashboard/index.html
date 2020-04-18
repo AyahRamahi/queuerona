@@ -133,6 +133,14 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
+          
+          {% if warning == 1 %}
+          <div class="alert alert-danger" role="alert" style="width:100%;height:130px;text-align:center;">
+            <h1 class="display-5">
+              ALERT - Someones Visited the store is infected, call emergency!!
+            </h1>
+          </div>
+          {% endif %}
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
