@@ -65,7 +65,7 @@ def warning(business_name):
     '''
     content = request.json
     if business_name in available_ticket:
-        infection[business_name]=1
+        infection[int(business_name)-1]=1
     return "success"
 
 @app.route("/business/<int:id>")
